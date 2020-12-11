@@ -1,3 +1,5 @@
+const missingValuesMsg = "<span id=\"missing-values\">Please fill all boxes...</span>"
+
 $(document).ready(function () {
     $("input").on('input change keyup', function () {
         const reach = parseFloat($("#reach").val());
@@ -5,7 +7,7 @@ $(document).ready(function () {
         const confidence = parseFloat($("#confidence").val());
         const effort = parseFloat($("#effort").val());
         if (isNaN(reach) || isNaN(impact) || isNaN(confidence) || isNaN(effort)) {
-            $("#rice-result").html("");
+            $("#rice-result").html(missingValuesMsg);
 
         } else {
             // round up to 2 decimal points
