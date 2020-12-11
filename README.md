@@ -1,2 +1,3 @@
-# rice-calculator
-Rice Calculator Frontend
+# RICE Calculator
+
+Frontend code for the RICE Prioritisation Score Calculator
